@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#box{
+			width: 600px;
+			height: 400px;
+			background: #B4B4B4;
+			position: relative;
+		}
+		#box img{
+			width: 600px;
+			height: 400px;
+			border-radius: 20px;
+			position: absolute;
+			z-index: 1;
+			transition: 4s;
+		}
+		
+		.text{
+			width: 400;
+			height: 400px;
+			position: absolute;
+			padding-top: 250px;
+			text-align: center;
+			z-index: 2;
+			opacity: 0;
+			transition: 2s;
+		}
+		#box:hover img{
+			opacity: 0.2;
+		}
+		#box:hover .text{
+			padding-top: 200px;
+			opacity: 1;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="box">
+	<img src="Avatar Hai.jpg" style="width: 600px height: 600px;">
+	<div class="overlay"></div>
+	<div class="text">
+		<h2>Tiêu đề H2</h2>
+		<hr>
+		<p>
+			* Experienced Shopify App Developer serving more than thousands of merchants worldwide.
+			* Featured several times on Shopify Trending Apps
+			* Customer-centered. You vote for new features and we turn them into reality. Your voice is heard and appreciated.
+			* Your brand, not ours. No LAI AliExpress Reviews label on your store.
+			* Dedicated support for migration from other review apps
+			* Offers for developers/experts/agencies: The trial period and more perks (Contact us)
+		</p>
+	</div>
+	</div>
+</body>
+</html>
